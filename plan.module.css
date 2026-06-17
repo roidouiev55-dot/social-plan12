@@ -1,0 +1,213 @@
+.root {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 16px 60px;
+}
+
+/* ── header ── */
+.header {
+  background: #1f2937;
+  color: #fff;
+  margin: 0 -16px 0;
+  padding: 20px 24px 16px;
+}
+.headerInner {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.3px; }
+.sub { font-size: 13px; color: #9ca3af; margin-top: 3px; }
+
+.statRow { display: flex; gap: 8px; }
+.stat {
+  background: rgba(255,255,255,0.08);
+  border-radius: 8px;
+  padding: 8px 14px;
+  text-align: center;
+  min-width: 58px;
+}
+.statN { display: block; font-size: 20px; font-weight: 600; }
+.statL { display: block; font-size: 10px; color: #9ca3af; margin-top: 1px; }
+
+/* ── filters ── */
+.filterBar {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 14px 0 6px;
+}
+.fbtn {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  color: #6b7280;
+  padding: 5px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+  transition: all .15s;
+}
+.fbtn:hover { background: #f3f4f6; }
+.fbtnOn {
+  background: #f9fafb;
+  font-weight: 600;
+  border-width: 2px;
+}
+
+/* ── legend ── */
+.legend {
+  display: flex;
+  gap: 14px;
+  font-size: 11px;
+  color: #6b7280;
+  padding: 6px 0 12px;
+}
+.legendItem { display: flex; align-items: center; gap: 5px; }
+.dotUrgent { width: 8px; height: 8px; border-radius: 2px; background: #e24b4a; display: inline-block; }
+.dotKey    { width: 8px; height: 8px; border-radius: 2px; background: #1d9e75; display: inline-block; }
+.dotEv     { width: 8px; height: 8px; border-radius: 2px; background: #1f2937; display: inline-block; }
+
+/* ── week separator ── */
+.weekSep {
+  font-size: 11px;
+  font-weight: 600;
+  color: #9ca3af;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  margin: 20px 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* ── day card ── */
+.dayCard {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.dayEvent {
+  border-right: 3px solid #1f2937;
+}
+
+.dayHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  width: 100%;
+  text-align: right;
+  background: none;
+  cursor: pointer;
+  transition: background .1s;
+}
+.dayHead:hover { background: #f9fafb; }
+
+.dayDate {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  min-width: 100px;
+  flex-shrink: 0;
+}
+
+.chips { display: flex; gap: 4px; flex-wrap: wrap; flex: 1; }
+.chip {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.evPill {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 100px;
+  background: #1f2937;
+  color: #fff;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.chev {
+  color: #9ca3af;
+  font-size: 14px;
+  flex-shrink: 0;
+  transition: transform .2s;
+  display: inline-block;
+}
+.chevOpen { transform: rotate(180deg); }
+
+/* ── day body ── */
+.dayBody { padding: 2px 14px 12px; }
+
+.brandBlock { margin-top: 10px; }
+.brandTag {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 100px;
+  display: inline-block;
+  margin-bottom: 6px;
+  letter-spacing: .02em;
+}
+
+.task {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 7px 9px;
+  border-radius: 8px;
+  background: #f9fafb;
+  margin-bottom: 5px;
+  border-right: 3px solid transparent;
+}
+.taskUrgent { border-right-color: #e24b4a; }
+.taskKey    { border-right-color: #1d9e75; }
+
+.taskIco { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+.taskBody { flex: 1; min-width: 0; }
+
+.taskMeta {
+  font-size: 10px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 2px;
+}
+.flagU { color: #e24b4a; }
+.flagK { color: #1d9e75; }
+
+.taskTitle {
+  font-size: 13px;
+  color: #111827;
+  line-height: 1.45;
+  font-weight: 500;
+}
+.taskSub {
+  font-size: 11px;
+  color: #6b7280;
+  line-height: 1.4;
+  margin-top: 3px;
+}
+
+/* ── footer ── */
+.footer {
+  text-align: center;
+  font-size: 11px;
+  color: #9ca3af;
+  margin-top: 40px;
+}
+
+/* ── mobile ── */
+@media (max-width: 600px) {
+  .statRow { gap: 5px; }
+  .stat { padding: 7px 10px; min-width: 48px; }
+  .statN { font-size: 17px; }
+  .dayDate { min-width: 80px; font-size: 12px; }
+}
