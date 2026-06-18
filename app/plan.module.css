@@ -211,3 +211,48 @@
   .statN { font-size: 17px; }
   .dayDate { min-width: 80px; font-size: 12px; }
 }
+/* ── tabs ── */
+.tabs { display: flex; gap: 6px; align-items: center; }
+.tab {
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all .15s;
+  cursor: pointer;
+  font-family: inherit;
+}
+.tab:hover { background: rgba(255,255,255,0.15); color: #fff; }
+.tabOn { background: rgba(255,255,255,0.2); color: #fff; border-color: rgba(255,255,255,0.3); }
+.content { padding-top: 16px; }
+.eventsTab { padding-bottom: 40px; }
+.eventsGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; margin-bottom: 32px; }
+.evCard { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; }
+.evCardDate { background: #1f2937; color: #fff; padding: 12px 16px; display: flex; align-items: baseline; gap: 8px; }
+.evCardDay { font-size: 28px; font-weight: 700; line-height: 1; }
+.evCardMonth { font-size: 14px; font-weight: 500; }
+.evCardDow { font-size: 12px; color: #9ca3af; margin-right: auto; }
+.evCardBrands { padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; }
+.evCardBrand { border-radius: 8px; padding: 10px 12px; }
+.evCardBrandName { font-size: 13px; font-weight: 700; display: block; margin-bottom: 2px; }
+.evCardType { font-size: 11px; color: #6b7280; display: block; margin-bottom: 8px; }
+.evCardChecklist { display: flex; flex-direction: column; gap: 3px; }
+.evCardChecklist span { font-size: 12px; color: #374151; }
+.evSummary { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; }
+.evSummaryTitle { font-size: 14px; font-weight: 600; color: #111827; margin-bottom: 12px; }
+.evTable { display: flex; flex-direction: column; gap: 6px; }
+.evTableHead { display: grid; grid-template-columns: 160px 100px 1fr; font-size: 11px; font-weight: 600; color: #9ca3af; padding: 0 10px 6px; border-bottom: 1px solid #f3f4f6; }
+.evTableRow { display: grid; grid-template-columns: 160px 100px 1fr; align-items: center; padding: 8px 10px; border-radius: 8px; background: #f9fafb; gap: 8px; }
+.evTableBrand { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 100px; display: inline-block; }
+.evTableCount { font-size: 13px; font-weight: 600; color: #374151; }
+.evTableDates { font-size: 12px; color: #6b7280; }
+.evTableTotal { display: grid; grid-template-columns: 160px 100px 1fr; padding: 8px 10px; font-size: 12px; font-weight: 600; color: #374151; border-top: 1px solid #e5e7eb; margin-top: 4px; }
+@media (max-width: 600px) {
+  .eventsGrid { grid-template-columns: 1fr; }
+  .evTableHead, .evTableRow, .evTableTotal { grid-template-columns: 130px 70px 1fr; }
+  .tabs { gap: 4px; }
+  .tab { padding: 6px 10px; font-size: 12px; }
+}
