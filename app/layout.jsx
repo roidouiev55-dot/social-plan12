@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "תוכנית סושיאל · יוני–יולי 2026",
+  title: "A&A HAFAKOT · תוכנית סושיאל",
   description: "תוכנית עבודה יומית לניהול 4 חשבונות אינסטגרם",
 };
 
